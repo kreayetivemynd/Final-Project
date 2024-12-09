@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrub-A-Dog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation Container -->
+    <div class="header-nav-container">
+        <!-- Header -->
+        <header>
+            <h1>Scrub-A-Dog</h1>
+            <h6>Clean Pets. Clean Owners.</h6>
+        </header>
+
+        <!-- Navigation -->
+        <nav>
+            <button id="menu-toggle" class="menu-icon" aria-label="Toggle navigation menu">
+                &#9776;
+            </button>
+
+            <ul id="nav-list" class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Banner Image -->
+    <section class="banner">
+        <img src="images/dog-banner.jpg" alt="Cute dogs banner">
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Contact us to book your appointment.</h1>
+
+        <!-- Booking Form -->
+        <form action="#" method="POST" class="booking-form">
+            <!-- Customer Information -->
+            <fieldset>
+                <legend>Customer Information</legend>
+
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+
+                <label for="pet-name">Pet's Name:</label>
+                <input type="text" id="pet-name" name="pet-name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+            </fieldset>
+
+            <!-- Service Request -->
+            <fieldset>
+                <legend>Service Request</legend>
+
+                <p>I would like the following service:</p>
+                <label><input type="radio" name="service" value="basic" required> Basic Groom</label><br>
+                <label><input type="radio" name="service" value="full"> Full Groom</label><br>
+                <label><input type="radio" name="service" value="pampered"> Pampered Groom</label><br><br>
+
+                <label for="groomer">Preferred Groomer:</label>
+                <select id="groomer" name="groomer">
+                    <option value="none">No preference</option>
+                    <option value="john">John</option>
+                    <option value="sarah">Sarah</option>
+                    <option value="emily">Emily</option>
+                    <option value="mike">Mike</option>
+                </select><br><br>
+
+                <label for="instructions">Special requests or instructions</label><br>
+                <textarea id="instructions" name="instructions" rows="5" cols="40"></textarea>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Copyright 2024. All Rights Reserved. | <a href="mailto:contact@polipaws.net">contact@polipaws.net</a></p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
